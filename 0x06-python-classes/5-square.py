@@ -5,7 +5,7 @@ without importing any module
 
 
 class Square:
-     """
+    """
     Empty class that define a square by Private instance attribute size,
     instantiation with size
     """
