@@ -69,6 +69,7 @@ class Square:
         set it
         """
         if (
+                type(value) is not tuple or
                 type(value[0]) is not int or
                 type(value[1]) is not int or
                 value[0] < 0 or
