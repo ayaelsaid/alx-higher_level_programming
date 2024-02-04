@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+import sys
+if __name__ != "__main__":
+    exit()
+if len(sys.argv) == 0:
+    print("0 arguments.")
+elif len(argv) == 1:
+    print("{} argument:\n{}: {}\n".format(len(sys.argv), 1, sys.argv[0]))
+else:
+    print("{} argument:".format(len(sys.argv)))
+    index = 0
+    for index in range(len(sys.argv)):
+        for args in sys.argv[1:]:
+            print("{}: {}".format(index + 1, args))
+            index += 1
