@@ -21,12 +21,16 @@ Test two:
   ZeroDivisionError: division by zero
 
 Test three str:
-    >>> matrix_divided("foo", 5)
-    Traceback (most recent call last):
-    ...
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
+  >>> matrix_divided("foo", 5)
+  Traceback (most recent call last):
+  ...
+  TypeError: matrix must be a matrix (list of lists) of integers/floats
 
-
+Test four:
+  >>> matrix_divided([[6, 9, 21], [24, 12, 15]], 'k')
+  Traceback (most recent call last):
+  ...
+  TypeError: div must be a number
 Test five:
 
   >>> matrix_divided([[6, 9, 21], ['k', 12, 15]], 3)
