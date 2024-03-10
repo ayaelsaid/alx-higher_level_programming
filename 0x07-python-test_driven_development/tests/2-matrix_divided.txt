@@ -55,8 +55,9 @@ Test seven:
   ...
   TypeError: matrix must be a matrix (list of lists) of integers/floats
 
+
 Test seven:
   >>> matrix_divided()
   Traceback (most recent call last):
   ...
-TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+  TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
