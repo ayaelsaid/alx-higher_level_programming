@@ -37,3 +37,17 @@ Test five:
   Traceback (most recent call last):
   ...
   TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test six:
+
+  >>> matrix_divided([[6, 9], [24, 12, 15]], 0)
+  Traceback (most recent call last):
+  ...
+  TypeError: matrix must have each row with the same size
+
+Test seven:
+
+  >>> matrix_divided([], 0)
+  Traceback (most recent call last):
+  ...
+  TypeError: matrix must be a matrix (list of lists) of integers/floats
