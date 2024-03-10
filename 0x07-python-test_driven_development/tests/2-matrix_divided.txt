@@ -22,7 +22,7 @@ Test two:
 
 Test four:
 
-  >>> matrix_divided([[6, 9, 21], [24, 12, 15]], "h")
+  >>> matrix_divided([[6, 9, 21], [24, 12, 15]], "boo")
   Traceback (most recent call last):
   ...
   TypeError: div must be a number 
@@ -31,6 +31,7 @@ Test five:
   >>> matrix_divided([[6, 9, 21], ['k', 12, 15]], 3)
   Traceback (most recent call last):
   ...
-  TypeError: Each element in the matrix must be a number
+  TypeError: matrix must be a matrix (list of lists) of integers/floats
+
 
 
