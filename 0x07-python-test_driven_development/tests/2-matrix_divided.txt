@@ -50,11 +50,10 @@ Test division by inf:
     [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
 
 Test seven:
-  >>> matrix_divided([[]], 3)
+  >>> matrix_divided(3)
   Traceback (most recent call last):
   ...
-  TypeError: matrix must be a matrix (list of lists) of integers/floats
-
+  TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
 
 Test seven:
   >>> matrix_divided()
