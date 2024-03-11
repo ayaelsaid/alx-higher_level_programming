@@ -1,0 +1,5 @@
+#!/usr/bin/node
+const argv = process.argv;
+const stArgs = process.argv[2];
+const ndArgs = process.argv[3];
+console.log('${stArgs} is ${ndArgs}');
