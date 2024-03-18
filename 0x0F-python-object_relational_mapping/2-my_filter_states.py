@@ -14,7 +14,8 @@ if __name__ == '__main__':
     # Create a cursor object
     cursor = db.cursor()
     # execute sql query
-    cursor.execute("SELECT * FROM states WHERE name = '{}' ORDER BY states.id ASC".format(state_name))
+    cursor.execute("SELECT * FROM states WHERE name = '{}' \
+            ORDER BY states.id ASC".format(state_name))
     # Fetch all rows
     allrows = cursor.fetchall()
     # display rows
