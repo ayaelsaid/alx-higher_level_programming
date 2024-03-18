@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, ForeignKey 
 from sqlalchemy.ext.declarative import declarative_base
 
 """a python file that contains the class definition of
@@ -15,11 +15,10 @@ class State(Base):
     Attributes:
       id (int): The unique id for the state.
       name (str): The name of the state.
+      state_id (int): ForeignKey
     """
 
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
-
-
-if __name__ == "__main__":
+    state_id = Column(Integer, ForeignKey('states.id'))
