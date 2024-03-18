@@ -5,9 +5,10 @@ from sys import argv
 
 # code should not be executed when imported
 if __name__ == '__main__':
-    
+
     # make a connection
-    db = MySQLdb.connect(host="localhost", port=3306, user=argv[1], passwd=argv[2], db=argv[3])
+    db = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
+                         passwd=argv[2], db=argv[3])
     # Create a cursor object
     cursor = db.cursor()
     # execute sql query
