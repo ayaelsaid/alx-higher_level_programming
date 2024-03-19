@@ -22,7 +22,7 @@ if __name__ == '__main__':
     allrows = cursor.fetchall()
     # display rows
     print(", ".join(row[0] for row in allrows), end="")
-    print() 
+    print()
     # close all
     cursor.close()
     db.close()
