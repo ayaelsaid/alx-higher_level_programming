@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -16,7 +14,7 @@ class State(Base):
 
     Attributes:
       __tablename__: the name of table
-      id (int): The unique id for the state.
+      id (int): The id of the state.
       name (str): The name of the state.
     """
 
