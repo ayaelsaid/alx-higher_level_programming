@@ -21,7 +21,8 @@ if __name__ == '__main__':
     # Fetch all rows
     allrows = cursor.fetchall()
     # display rows
-    print(", ".join(row[0] for row in allrows), end="")
+    for row in allrows:
+        print(", ".join, end="")
     # close all
     cursor.close()
     db.close()
