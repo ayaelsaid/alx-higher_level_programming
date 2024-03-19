@@ -15,19 +15,11 @@ class State(Base):
     represent a state in the database.
 
     Attributes:
+      __tablename__: the name of table
       id (int): The unique id for the state.
       name (str): The name of the state.
-      state_id (int): ForeignKey
     """
 
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
-
-
-if __name__ == "__main__":
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
-                           sys.argv[1],
-                           sys.argv[2], sys.argv[3]),
-                           pool_pre_ping=True)
-    Base.metadata.create_all(engine)
