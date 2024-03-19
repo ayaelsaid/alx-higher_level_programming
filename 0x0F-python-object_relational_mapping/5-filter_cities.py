@@ -22,7 +22,7 @@ if __name__ == '__main__':
     allrows = cursor.fetchall()
     # display rows
     city_names = [row[0] for row in allrows]
-        print(", ".join(row), end="")
+    print(", ".join(row), end="")
     # close all
     cursor.close()
     db.close()
