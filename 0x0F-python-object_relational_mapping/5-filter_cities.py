@@ -21,7 +21,7 @@ if __name__ == '__main__':
     # Fetch all rows
     allrows = cursor.fetchall()
     # display rows
-    city_names = [row[0] for row in allrows]
+    city_names = row[0] for row in allrows
     print(", ".join(row), end="")
     # close all
     cursor.close()
